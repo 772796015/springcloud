@@ -1,0 +1,11 @@
+server:
+  port: 8003
+  
+spring:
+   application:
+    name: microservicecloud-dept #eureka服务注册进去后列表显示的名字
+    
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url: 
+      defaultZone: http://localhost:7001/eureka
