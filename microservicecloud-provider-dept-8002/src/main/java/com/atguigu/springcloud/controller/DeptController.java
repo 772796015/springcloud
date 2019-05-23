@@ -11,6 +11,7 @@ public class DeptController {
 	@ResponseBody
 	@RequestMapping("/hello")
 	public String hello(){
+		System.out.println("-------------我是8002--------------");
 		return "我是8002";
 	}
 
