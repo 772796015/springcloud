@@ -1,0 +1,13 @@
+server:
+  port: 8001
+  
+spring:
+   application:
+    name: microservicecloud-dept #eureka服务注册进去后列表显示的名字
+    
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url: 
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: microservicecloud-dept8001-hystrix   #自定义hystrix相关的服务名称信息  此处名字可以随意起，只是个名字，没有其他用处
